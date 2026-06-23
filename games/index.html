@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HKraft Labs — Games</title>
+<meta name="description" content="HKraft Labs のネオン系カジュアルゲーム一覧。スイング・オービット・花火など、片手で遊べるアーケードゲームを Android / iOS で無料配信。HKraft Labs neon arcade games — free on Android & iOS.">
+<meta name="theme-color" content="#0a0713">
+<meta property="og:title" content="HKraft Labs — Games">
+<meta property="og:description" content="ネオン系カジュアルゲームを個人開発。Android / iOS で無料配信中。">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --bg:#0a0713; --pink:#ff2d95; --cyan:#18ffff; --violet:#9b6bff; --amber:#ffb13c;
+    --text:#eafbff; --muted:#9aa6c0; --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI",Roboto,sans-serif;
+    color:var(--text);background:var(--bg);line-height:1.6;
+    background-image:
+      radial-gradient(900px 500px at 50% -8%, rgba(255,45,149,.22), transparent 60%),
+      radial-gradient(700px 500px at 100% 100%, rgba(24,255,255,.10), transparent 60%);
+    background-attachment:fixed;min-height:100vh;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header{text-align:center;padding:64px 20px 32px}
+  header img{width:96px;height:96px;border-radius:50%;box-shadow:0 0 32px rgba(255,45,149,.45)}
+  .brand{font-weight:800;font-size:clamp(28px,7vw,44px);letter-spacing:.5px;margin-top:18px;
+    background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tag{color:var(--muted);font-size:clamp(13px,3.4vw,16px);margin-top:8px}
+  .grid{display:grid;grid-template-columns:1fr;gap:18px;padding:24px 0 8px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;
+    display:flex;flex-direction:column;gap:14px;backdrop-filter:blur(6px);
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .card:hover{transform:translateY(-3px);border-color:rgba(255,45,149,.5)}
+  .card-top{display:flex;gap:16px;align-items:center}
+  .card-top img{width:72px;height:72px;border-radius:18px;flex:0 0 auto;box-shadow:0 0 18px rgba(24,255,255,.25)}
+  .name{font-weight:800;font-size:20px;line-height:1.25}
+  .name small{display:block;font-weight:600;font-size:12.5px;color:var(--muted);margin-top:3px}
+  .desc{color:#cdd6ea;font-size:14.5px}
+  .desc .en{color:var(--muted);font-size:13px;display:block;margin-top:2px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+  .btn{
+    flex:1 1 auto;min-width:140px;text-align:center;text-decoration:none;font-weight:700;font-size:14px;
+    padding:11px 14px;border-radius:12px;border:1px solid transparent;
+  }
+  .btn-play{background:linear-gradient(90deg,#18ffff22,#18ffff10);border-color:#18ffff66;color:#bafcff}
+  .btn-play:hover{background:#18ffff22;box-shadow:0 0 18px rgba(24,255,255,.3)}
+  .btn-ios{background:linear-gradient(90deg,#ff2d9522,#ff2d9510);border-color:#ff2d9566;color:#ffd0e8}
+  .btn-ios:hover{background:#ff2d9522;box-shadow:0 0 18px rgba(255,45,149,.3)}
+  .btn-soon{opacity:.5;pointer-events:none;border-style:dashed}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:40px 20px 56px}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <img src="assets/studio.png" alt="HKraft Labs">
+  <div class="brand">HKraft Labs</div>
+  <p class="tag">ネオン系カジュアルゲームを個人開発 ・ Neon arcade games — free on Android &amp; iOS</p>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+
+    <!-- Swing Flow -->
+    <article class="card">
+      <div class="card-top">
+        <img src="assets/swing.png" alt="Swing Flow">
+        <div class="name">Swing Flow<small>スイングフロー</small></div>
+      </div>
+      <p class="desc">ワンタップで爽快スイング。離して飛んでハイスコアを狙う一本指アクション。<span class="en">One-tap neon swing action — hold to grab, release to fly.</span></p>
+      <div class="btns">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.hkraftlabs.swingflow">Google Play</a>
+        <!-- iOS: 公開後に apps.apple.com/app/idXXXXXXXXX を貼って btn-soon を外す -->
+        <a class="btn btn-ios btn-soon" href="#">App Store（準備中）</a>
+      </div>
+    </article>
+
+    <!-- Neon Orbit -->
+    <article class="card">
+      <div class="card-top">
+        <img src="assets/orbit.png" alt="Neon Orbit">
+        <div class="name">Neon Orbit<small>ネオンオービット</small></div>
+      </div>
+      <p class="desc">タップで跳ねるネオン軌道アクション。軌道から軌道へ飛び移り、迫る崩壊から逃げ切れ。<span class="en">Hop orbits, outrun the rising void.</span></p>
+      <div class="btns">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.hkraftlabs.orbitdrift">Google Play</a>
+        <!-- iOS: 公開後に apps.apple.com/app/idXXXXXXXXX を貼って btn-soon を外す -->
+        <a class="btn btn-ios btn-soon" href="#">App Store（準備中）</a>
+      </div>
+    </article>
+
+    <!-- Hanabi Chain -->
+    <article class="card">
+      <div class="card-top">
+        <img src="assets/hanabi.png" alt="Hanabi Chain">
+        <div class="name">Hanabi Chain<small>花火チェーン</small></div>
+      </div>
+      <p class="desc">タップで打ち上げる花火チェーン。狙って咲かせて、連鎖を繋げるパズルアクション。<span class="en">Tap to launch fireworks and chain the blooms.</span></p>
+      <div class="btns">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.hkraftlabs.hanabichaingame">Google Play</a>
+        <!-- iOS: 公開後に apps.apple.com/app/idXXXXXXXXX を貼って btn-soon を外す -->
+        <a class="btn btn-ios btn-soon" href="#">App Store（準備中）</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  © HKraft Labs ・ <a href="/privacy.html">プライバシーポリシー</a> ・ <a href="/terms.html">利用規約</a>
+</footer>
+</body>
+</html>
